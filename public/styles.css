@@ -1,0 +1,105 @@
+/* Modern Crypto UI */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 50px;
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+select, button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+select {
+  background: #2b2b2b;
+  color: #eee;
+}
+
+button {
+  background: #00d26a;
+  color: black;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00b85c;
+}
+
+.card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-left: 4px solid #00d26a;
+}
+
+.card p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.error {
+  margin-top: 20px;
+  color: #ff6b6b;
+  font-size: 16px;
+}
+
+.back {
+  margin-top: 20px;
+  display: inline-block;
+  color: #00d26a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Result</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    
+    <h1><%= data.crypto.toUpperCase() %> Price</h1>
+
+    <div class="card">
+      <p>
+        <strong>Current Price:</strong><br>
+        <span style="font-size: 26px; font-weight: 600;">
+          <%= new Intl.NumberFormat('en-IN').format(data.price) %> 
+          <%= data.currency.toUpperCase() %>
+        </span>
+      </p>
+
+      <p>
+        <strong>24h Change:</strong><br>
+        <span style="font-size: 24px;">
+          <%= data.change %>% 
+          <% if (data.change > 0) { %>
+            <span style="color:#00ff7f;">📈</span>
+          <% } else { %>
+            <span style="color:#ff6b6b;">📉</span>
+          <% } %>
+        </span>
+      </p>
+    </div>
+
+    <a href="/" class="back">← Check Another Coin</a>
+
+  </div>
+</body>
+</html>
